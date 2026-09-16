@@ -1,10 +1,16 @@
-# Reality Transurfing: Twenty Core Concepts
+# Reality Transurfing: A Visual Guide
 
 A visual memory aid for the model set out in *Reality Transurfing, Steps I-V* by Vadim Zeland.
 
-Twenty core concepts, each paired with an original illustration built to make the idea stick. The summaries are original commentary rather than extracts from the book.
-
 **Live:** https://tik-sargsyan.github.io/reality-transurfing/
+
+## The three parts
+
+**One. The Twenty Core Concepts.** The model in twenty frames, in the order the book builds it. Each concept is paired with an original illustration and a short summary written as original commentary, not extracted from the book.
+
+**Two. The Seven Mirror Rules.** Chapter XVIII sets out seven principles for working with the dual mirror. Each is quoted in Zeland's own words, then illustrated, then followed by a visual hook and the practical rule.
+
+**Three. Every Chapter Summary.** The end-of-chapter summaries from all nineteen chapters, quoted verbatim from the book, in collapsible sections. The afterword carries no summary.
 
 ## Contents
 
@@ -12,12 +18,14 @@ Single static page. No build step, no dependencies.
 
 ```
 index.html      the page
-images/         20 illustrations, 2K JPEG
+images/         27 illustrations, 2K JPEG
 og.jpg          social preview
 ```
 
-Illustrations generated with Nano Banana Pro (`gemini-3-pro-image`) at 4:3, 2K, under one shared art direction.
+Illustrations generated with Nano Banana Pro (`gemini-3-pro-image`) at 4:3, 2K, under one shared art direction: deep indigo and teal with a single warm amber accent, one dominant metaphor per frame, caption set into the image. The seven mirror frames add a literal mirror or reflection axis to that same language.
 
 ## Credit
 
-Concepts from *Reality Transurfing, Steps I-V* by Vadim Zeland. Summaries and illustrations by Tigran Sargsyan.
+From *Reality Transurfing, Steps I-V* by Vadim Zeland. The mirror rules in Part Two and the chapter summaries in Part Three are quoted from the book and belong to the author. The commentary and the illustrations are by Tigran Sargsyan.
+
+Zeland's system is metaphysical rather than scientific and makes no falsifiable claims. Read it as a set of psychological heuristics wrapped in a cosmology.

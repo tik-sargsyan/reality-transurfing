@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reality Transurfing: Twenty Core Concepts</title>
-<meta name="description" content="Twenty core concepts from Vadim Zeland's Reality Transurfing, each paired with an original illustration built as a visual memory aid.">
+<title>Reality Transurfing: A Visual Guide</title>
+<meta name="description" content="Twenty core concepts and the seven mirror rules from Vadim Zeland's Reality Transurfing, each illustrated, plus every chapter summary.">
 <meta name="author" content="Tigran Sargsyan">
 <link rel="canonical" href="https://tik-sargsyan.github.io/reality-transurfing/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Reality Transurfing: Twenty Core Concepts">
-<meta property="og:description" content="Twenty core concepts from Vadim Zeland's Reality Transurfing, each paired with an original illustration built as a visual memory aid.">
+<meta property="og:title" content="Reality Transurfing: A Visual Guide">
+<meta property="og:description" content="Twenty core concepts and the seven mirror rules from Vadim Zeland's Reality Transurfing, each illustrated, plus every chapter summary.">
 <meta property="og:url" content="https://tik-sargsyan.github.io/reality-transurfing/">
 <meta property="og:image" content="https://tik-sargsyan.github.io/reality-transurfing/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Reality Transurfing: Twenty Core Concepts">
-<meta name="twitter:description" content="Twenty core concepts from Vadim Zeland's Reality Transurfing, each paired with an original illustration built as a visual memory aid.">
+<meta name="twitter:title" content="Reality Transurfing: A Visual Guide">
+<meta name="twitter:description" content="Twenty core concepts and the seven mirror rules from Vadim Zeland's Reality Transurfing, each illustrated, plus every chapter summary.">
 <meta name="twitter:image" content="https://tik-sargsyan.github.io/reality-transurfing/og.jpg">
 <meta name="theme-color" content="#0b0f18">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f18'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23e0a355' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='1.8' fill='%23e0a355'/%3E%3C/svg%3E">
@@ -94,15 +94,92 @@
     h2 i,.hook span{color:#8a6a2f}
     .source a{color:#000;border:0}
   }
+
+  .part{
+    margin:clamp(70px,11vw,120px) 0 clamp(34px,6vw,54px);
+    border-top:1px solid var(--line); padding-top:clamp(26px,4vw,36px);
+  }
+  .part-n{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--amber);
+    font-size:12px; letter-spacing:.2em; text-transform:uppercase; margin:0 0 10px;
+  }
+  .part-t{font-size:clamp(25px,4.4vw,38px); line-height:1.15; font-weight:400; margin:0 0 14px; display:block}
+  .part-note{color:var(--muted); font-size:15.5px; line-height:1.6; margin:0; max-width:62ch}
+  .toc{
+    display:flex; flex-wrap:wrap; gap:8px 10px; margin:26px 0 0; padding:0; list-style:none;
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif;
+  }
+  .toc a{
+    display:inline-block; color:var(--muted); text-decoration:none; font-size:12.5px;
+    letter-spacing:.1em; text-transform:uppercase; border:1px solid var(--line);
+    border-radius:999px; padding:7px 15px;
+  }
+  .toc a:hover,.toc a:focus-visible{color:var(--amber); border-color:rgba(224,163,85,.5)}
+  .law{
+    font-size:19px; line-height:1.5; color:var(--ink); font-style:italic;
+    border-left:2px solid var(--amber); padding-left:20px; margin:0 0 16px;
+  }
+  .law span{
+    display:block; font-style:normal; font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--amber);
+    margin-bottom:6px;
+  }
+  .ch{border-bottom:1px solid var(--line)}
+  .ch:first-of-type{border-top:1px solid var(--line)}
+  .ch>summary{
+    cursor:pointer; list-style:none; display:flex; align-items:baseline; gap:15px;
+    padding:17px 2px; font-size:clamp(17px,2.6vw,21px); line-height:1.3;
+  }
+  .ch>summary::-webkit-details-marker{display:none}
+  .ch>summary:hover,.ch>summary:focus-visible{color:var(--amber)}
+  .ch>summary i{
+    font-style:normal; color:var(--amber); font-size:12px; letter-spacing:.08em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; flex:none;
+    min-width:3.4em; padding-top:.25em;
+  }
+  .ch>summary b{font-weight:400; flex:1}
+  .ch>summary::after{
+    content:"+"; margin-left:auto; color:var(--muted); font-size:19px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; flex:none; line-height:1;
+  }
+  .ch[open]>summary::after{content:"\2212"}
+  .ch[open]>summary{color:var(--amber)}
+  .ch ul{margin:0 0 26px; padding:0 0 0 calc(3.4em + 15px); list-style:none}
+  .ch li{margin:0 0 11px; color:#c3cee2; font-size:16.5px; line-height:1.6; max-width:64ch}
+  .ch li:last-child{margin-bottom:0}
+  @media (max-width:560px){
+    .ch ul{padding-left:0}
+    .ch>summary i{min-width:2.9em}
+  }
+  @media print{
+    .toc{display:none}
+    .ch>summary::after{display:none}
+    .ch ul{padding-left:0}
+    .ch li{color:#333}
+    .law{color:#000; border-left-color:#8a6a2f}
+    .law span{color:#8a6a2f}
+    .part-n{color:#8a6a2f}
+    .part-note{color:#333}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
 <h1>Reality Transurfing</h1>
-<p class="sub">Twenty Core Concepts</p>
+<p class="sub">Twenty Concepts &middot; Seven Mirror Rules &middot; Nineteen Chapter Summaries</p>
 <p class="source">A visual memory aid for the model set out in <em>Reality Transurfing, Steps I&ndash;V</em> by Vadim Zeland. The summaries below are original commentary, not extracts. For the argument itself, the case studies and the author's voice, read <a href="https://www.goodreads.com/book/show/6522269-reality-transurfing-steps-i-v" rel="noopener">the book</a>.</p>
+<ul class="toc">
+<li><a href="#part1">One&nbsp;&middot;&nbsp;The Concepts</a></li>
+<li><a href="#part2">Two&nbsp;&middot;&nbsp;The Mirror Rules</a></li>
+<li><a href="#part3">Three&nbsp;&middot;&nbsp;The Chapter Summaries</a></li>
+</ul>
 </header>
+<div class="part" id="part1">
+<p class="part-n">Part One</p>
+<h2 class="part-t">The Twenty Core Concepts</h2>
+<p class="part-note">The model in twenty frames, in the order the book builds it. Each summary is original commentary.</p>
+</div>
 <section id="c01">
 <h2><i>01</i>The Alternatives Space</h2>
 <figure><img src="images/01-alternatives-space.jpg" alt="The Alternatives Space" width="1600" height="1200" loading="lazy" decoding="async"></figure>
@@ -279,8 +356,551 @@
 <p class="rule"><span>Rule</span>The mirror does not hear that you do not want something, it only hears the something. And the delay is structural, so absent early results are expected. Impatience at that point is what breaks the practice.</p>
 </div>
 </section>
+<div class="part" id="part2">
+<p class="part-n">Part Two</p>
+<h2 class="part-t">The Seven Mirror Rules</h2>
+<p class="part-note">Chapter XVIII sets out seven principles for working with the dual mirror. Each is quoted here in Zeland&#x27;s own words, then illustrated.</p>
+</div>
+<section id="mi">
+<h2><i>I</i>The World Reflects</h2>
+<figure><img src="images/21-world-reflects.jpg" alt="The World Reflects" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;the world is like a mirror that reflects your relationship to it&rdquo;</p>
+<p class="hook"><span>Hook</span>The glass holds no body, only a landscape whose weather matches the posture in front of it. Where the figure's shadow touches the surface, the valley beyond goes grey.</p>
+<p class="rule"><span>Rule</span>The world answers your relationship to it, not your effort. Change what you hold toward it and the reflection has nothing else to copy.</p>
+</div>
+</section>
+<section id="mii">
+<h2><i>II</i>Heart and Mind Agree</h2>
+<figure><img src="images/22-heart-and-mind.jpg" alt="Heart and Mind Agree" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;reflection is formed in the unity of heart and mind&rdquo;</p>
+<p class="hook"><span>Hook</span>Two beams leave one body, a cool lattice from the head and a warm glow from the chest. The mirror stays fogged everywhere except the narrow band where the two lock into phase.</p>
+<p class="rule"><span>Rule</span>A wish the mind argues for and the heart refuses never reaches the glass. Only what both hold without conflict forms an image.</p>
+</div>
+</section>
+<section id="miii">
+<h2><i>III</i>The Delay</h2>
+<figure><img src="images/23-the-delay.jpg" alt="The Delay" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;there is a delay in the reaction of the dual mirror&rdquo;</p>
+<p class="hook"><span>Hook</span>You already stand tall. The reflection is still hunched, dragging itself forward through a trail of ghost positions like slow honey.</p>
+<p class="rule"><span>Rule</span>The lag is structural, not a verdict. Early results are supposed to be absent, which is exactly why impatience at that point is what breaks the practice. If unity is out of reach, take the fortress by siege.</p>
+</div>
+</section>
+<section id="miv">
+<h2><i>IV</i>Content Not Direction</h2>
+<figure><img src="images/24-content-not-direction.jpg" alt="Content Not Direction" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;The mirror cites the content of the relationship but ignores its orientation&rdquo;</p>
+<p class="hook"><span>Hook</span>The gesture of refusal dissolves into vapour at the surface of the glass while the thing being refused passes straight through and multiplies on the far side.</p>
+<p class="rule"><span>Rule</span>The mirror registers the subject of your attention and discards the sign on it. Fighting a thing and wanting it feed the same reflection.</p>
+</div>
+</section>
+<section id="mv">
+<h2><i>V</i>Move the Image</h2>
+<figure><img src="images/25-move-the-image.jpg" alt="Move the Image" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;switch your attention from the reflection to the image&rdquo;</p>
+<p class="hook"><span>Hook</span>On one side of the glass, hands sliding uselessly across the surface trying to rearrange what is in it. On the other, a person with their back turned holding a small amber slide, and the whole mirror filled with it.</p>
+<p class="rule"><span>Rule</span>A reflection cannot be moved by touching it. Think about what you are moving toward rather than what you are trying to get away from, and the glass follows.</p>
+</div>
+</section>
+<section id="mvi">
+<h2><i>VI</i>Release Your Grip</h2>
+<figure><img src="images/26-release-your-grip.jpg" alt="Release Your Grip" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;release your grip and allow the world to move with the alternatives flow&rdquo;</p>
+<p class="hook"><span>Hook</span>White knuckles on the frame with the current piling up against them, and the same hands opening, the same river running clean and fast.</p>
+<p class="rule"><span>Rule</span>The paradox is exact: abandoning the position of control is what gives you control. Keep the goal, drop the script for how it has to arrive.</p>
+</div>
+</section>
+<section id="mvii">
+<h2><i>VII</i>Every Reflection Positive</h2>
+<figure><img src="images/27-every-reflection-positive.jpg" alt="Every Reflection Positive" width="1600" height="1200" loading="lazy" decoding="async"></figure>
+<div class="text">
+<p class="law"><span>The book&#x27;s words</span>&ldquo;embrace any reflection as positive&rdquo;</p>
+<p class="hook"><span>Hook</span>A cracked, storm-coloured reflection, with gold spreading through the fractures outward from the single point where a calm gaze meets the glass.</p>
+<p class="rule"><span>Rule</span>From inside the mirror you can never know whether a turn is for your good or against it, so the reading is yours to make. Declaring it good is what makes it so.</p>
+</div>
+</section>
+<div class="part" id="part3">
+<p class="part-n">Part Three</p>
+<h2 class="part-t">Every Chapter Summary</h2>
+<p class="part-note">The end-of-chapter summaries from all nineteen chapters, quoted verbatim from <em>Reality Transurfing, Steps I&ndash;V</em>. The afterword carries no summary. Open any chapter to read it.</p>
+</div>
+<details class="ch" id="s01">
+<summary><i>I.</i><b>The Alternatives Model</b></summary>
+<ul>
+<li>Reality is manifest in an infinite variety of forms.</li>
+<li>Variability is the world’s most fundamental quality.</li>
+<li>Any model of the universe represents just one manifestation of reality.</li>
+<li>Any branch of knowledge bases itself on one chosen aspect of the manifestation of reality.</li>
+<li>Your choice is always realized. You always receive what you choose.</li>
+<li>The alternatives space is an information field recording all that was, is and ever will be.</li>
+<li>The information field contains potential alternative scenarios to any event.</li>
+<li>Each alternative has a script and scenery.</li>
+<li>Space can be divided into sectors and each sector contains an alternative scenario of an event.</li>
+<li>The greater the distance between sectors, the more the alternatives will differ.</li>
+<li>Sectors with roughly uniform parameters are arranged in a life line.</li>
+<li>Material realisation moves through space like a bundle of density.</li>
+<li>The radiation of thought energy materializes an alternative.</li>
+<li>Every organism contributes to the creation of material realization.</li>
+<li>When the parameters of thought energy change, a shift occurs to a different life line.</li>
+<li>You cannot change the fact that scenery exists, but you can choose a different type of scenery.</li>
+<li>You do not have to fight for happiness. You simply have to choose an alternative reality that is more to your liking.</li>
+</ul>
+</details>
+<details class="ch" id="s02">
+<summary><i>II.</i><b>Pendulums</b></summary>
+<ul>
+<li>A pendulum is created by the energy of a group of people thinking in the same way.</li>
+<li>A pendulum is an energy based information structure.</li>
+<li>A pendulum maintains the thought energy of the adherent at its own vibrational frequency.</li>
+<li>A harsh battle for adherents takes place between the pendulums.</li>
+<li>A destructive pendulum forces goals onto its adherents that are not of their own making.</li>
+<li>A pendulum plays on human emotion, thereby catching the individual in their web.</li>
+<li>If there is something that you really do not want it will appear in your life.</li>
+<li>To free oneself from a pendulum means to give it no place in your life.</li>
+<li>To give something no place in your life does not mean to try and avoid it; it means to ignore it.</li>
+<li>To bring a pendulum to rest you have to change the established game script.</li>
+<li>Positive visualization will gently bring the swing of a human pendulum to rest.</li>
+<li>The energy of a stilled pendulum becomes available to you.</li>
+<li>Problems are solved by defeating or stopping the pendulum that created them.</li>
+<li>To solve a problem, rent yourself out.</li>
+<li>To avoid getting stuck in a suspended state, find your own pendulums.</li>
+<li>It is essential to acquire the habit of remembering what you know.</li>
+</ul>
+</details>
+<details class="ch" id="s03">
+<summary><i>III.</i><b>The Wave of Fortune</b></summary>
+<ul>
+<li>The wave of good fortune is an accumulation of favourable life lines in the alternatives space.</li>
+<li>A cascade of good luck follows only if you have let yourself become imbued with the joyful energy evoked by the first stroke of luck.</li>
+<li>Destructive pendulums will try to coax you away from the wave of fortune.</li>
+<li>When you overcome dependence on pendulums you win your freedom.</li>
+<li>By taking on and transmitting negative energy you create your own hell.</li>
+<li>By accepting and transmitting positive energy you create your own heaven.</li>
+<li>Your thoughts always return to you like a boomerang.</li>
+<li>Pendulums cannot throw you off the wave of fortune once remembering has become a habit.</li>
+<li>The habit of remembering is developed through consistent practice.</li>
+</ul>
+</details>
+<details class="ch" id="s04">
+<summary><i>IV.</i><b>Balance</b></summary>
+<ul>
+<li>Excess potential is only created when you attribute importance to your assessment.</li>
+<li>Only the importance you personally attribute to something imbues your assessment with energy.</li>
+<li>The force of the excess potential created, increases if your assessment represents a distortion of reality.</li>
+<li>The impact of balanced forces is aimed at eliminating excess potential.</li>
+<li>The action of balanced forces is often the opposite of the original intention that created the potential.</li>
+<li>When renting yourself out, instruct your inner Guardian be help you remain impeccable.</li>
+<li>Discontent and judgement will always turn balanced forces against you.</li>
+<li>It is essential that habits of negative response be substituted with a transmission of positive energy.</li>
+<li>Unconditional love is admiration without worship or the need to possess.</li>
+<li>Setting conditions and making comparisons leads to dependent relationships.</li>
+<li>Dependent relationships create excess potential.</li>
+<li>Idealization and overestimation always end in disillusionment.</li>
+<li>To experience reciprocal love you must let go of the right to possess.</li>
+<li>You always have to pay for expressions of contempt and vanity.</li>
+<li>Let go of the need to assert your superiority.</li>
+<li>Striving to hide shortcomings creates the opposite effect.</li>
+<li>Your positive qualities compensate for any inadequacies.</li>
+<li>The greater the importance of your goal, the less likely you are to achieve it.</li>
+<li>Desires are realized when they are free of excess potential created by projected importance and dependency.</li>
+<li>Let go of feelings of guilt and the need to justify your actions.</li>
+<li>To let go of guilt, it is enough to give yourself permission to be yourself.</li>
+<li>No-one has the right to judge you. You have the right to be yourself.</li>
+<li>Money comes of its own accord as an attribute on the path to your goal.</li>
+<li>Greet money with love and attentiveness and part with it without regret.</li>
+<li>Having let go of inner and outer importance you acquire freedom of choice.</li>
+<li>The projection of importance is the only obstacle on the way to fulfilling your desires.</li>
+<li>Do not try to overcome obstacles; reduce the amount of importance you project onto them.</li>
+<li>Take care without worrying.</li>
+</ul>
+</details>
+<details class="ch" id="s05">
+<summary><i>V.</i><b>The Induced Transition</b></summary>
+<ul>
+<li>Everyone creates the separate layer of their own world.</li>
+<li>The world of humanity consists of individual layers, placed one on top of the other.</li>
+<li>When a person emanates negative energy they compromise the quality of their own life layer.</li>
+<li>Aggression is mistakenly taken to be a strength and dissatisfaction as a normal reaction.</li>
+<li>Reacting to negative events induces a shift to negative life lines.</li>
+<li>An induced transition is accompanied by a negative event in a personal life layer.</li>
+<li>Do not allow negative information into your layer.</li>
+<li>“Do not allow” does not mean strive to avoid, but rather, to intentionally ignore, to express no interest.</li>
+</ul>
+</details>
+<details class="ch" id="s06">
+<summary><i>VI.</i><b>The Alternatives Flow</b></summary>
+<ul>
+<li>The mind interprets information using a set of established designations.</li>
+<li>The heart does not think or speak. It feels and knows.</li>
+<li>The mind is only capable of building a relatively new version of a house from old bricks.</li>
+<li>Fundamentally new discoveries originate in unrealised sectors of the alternatives space.</li>
+<li>The heart serves as a medium between new information and the mind.</li>
+<li>The heart perceives unrealised information as knowledge beyond interpretation.</li>
+<li>A discovery is made when the mind is able to interpret information accessed by the heart.</li>
+<li>The mind is capable of perfectly assessing one’s level of inner comfort.</li>
+<li>Learn to pay attention to your inner state.</li>
+<li>By foregoing the projection of importance you are free to choose your destiny.</li>
+<li>Freedom of choice means being free not to ask, demand or fight for what you want but simply to go out and get it.</li>
+<li>The information structure is organised in chains of cause and effect.</li>
+<li>Chains of cause and effect generate the alternatives flow.</li>
+<li>Paths of least resistance are organised into separate streams.</li>
+<li>Streams in the alternatives flow contain the solutions to all our problems.</li>
+<li>Inner and outer importance jolts the mind out of the optimal stream.</li>
+<li>In the alternatives flow it is not the streams but your mind that brings you to the edge of the waterfall.</li>
+<li>Everything works a lot more simply than you think. Yield to this simplicity.</li>
+<li>What works is not the omen itself but your attitude to the omen.</li>
+<li>Guiding signs indicate a possible bend in the flow of alternatives.</li>
+<li>Life lines differ from each other in quality.</li>
+<li>Signs put us on our guard because they appear during a shift to a different life line.</li>
+<li>Signs are characterised by their tendency to evoke the feeling that something is not right.</li>
+<li>Spontaneous phrases can be perceived as instructions.</li>
+<li>The level of inner peace one feels represents a clear sign.</li>
+<li>If you have to talk yourself into something it means that the heart is saying ‘no’.</li>
+<li>If it is possible to change a decision that causes you to feel uncomfortable in your gut, do so.</li>
+<li>Soften your grip on things and allow unforeseen events into the script.</li>
+<li>Projected importance hinders the mind from accepting a deviation from the script.</li>
+<li>The mind strives to control the flow itself rather than its own manner of moving with the flow.</li>
+<li>Shift the centre of gravity from control to observation.</li>
+<li>Having let go of attachment to control you will find you have genuine control of a situation.</li>
+<li>If you move harmoniously with the flow of alternatives the world will meet you half way.</li>
+</ul>
+</details>
+<details class="ch" id="s07">
+<summary><i>VII.</i><b>Intention</b></summary>
+<ul>
+<li>In conscious dreaming the mind controls the game script.</li>
+<li>Dreaming is the virtual journey of the soul through the alternatives space.</li>
+<li>Dreams should not be interpreted as signs.</li>
+<li>The soul will not necessarily return if it flies into a realized sector of the alternatives space.</li>
+<li>It is not desire that is realized but intention, i.e. the resoluteness to have and to act.</li>
+<li>Desire is the concentration of attention on the goal.</li>
+<li>Inner intention is the concentration of attention on the process of moving in the direction of the goal.</li>
+<li>Outer intention is the concentration of attention on how the goal realizes itself.</li>
+<li>The goal is achieved by inner intention and by outer intention simply chosen.</li>
+<li>Inner intention strives to impact the outside world directly.</li>
+<li>Outer intention gives the green light for the autonomous realization of the goal.</li>
+<li>The laws of natural science only work in one given sector of the alternatives space.</li>
+<li>Outer intention works by moving through different sectors of the space.</li>
+<li>Outer intention is the unity of heart and mind.</li>
+<li>Imagination takes part in dreaming only to the extent that generates the initial idea.</li>
+<li>The heart and mind are united in negative expectation, which is why they are easily realized.</li>
+<li>In reality a dream continues in waking to some degree or another.</li>
+<li>If you want to exercise control over outer intention you have to wake up.</li>
+<li>Whilst you live without conscious awareness, reality cannot be controlled, it just ‘happens’.</li>
+<li>Any game must be played with an element of detachment like a participating observer.</li>
+<li>Awareness is achieved by being detached from the game.</li>
+<li>Detachment presupposes vigilance and complete mental clarity.</li>
+<li>Conscious awareness is not so much about control as observation.</li>
+<li>Control should be exercised only to the extent that it allows desired scripts into your life.</li>
+<li>In order to choose the necessary script you have to imagine that it will be exactly as you desire it.</li>
+<li>Inner intention is resoluteness in the decision to act.</li>
+<li>Outer intention is resoluteness in the decision to have.</li>
+<li>Outer intention is the power that makes Transurfing possible.</li>
+<li>In order to reduce the importance associated with the goal the possibility of failure must be accepted at the outset.</li>
+<li>Once you have accepted the possibility of failure, do not think, just move in the direction of your goal.</li>
+</ul>
+</details>
+<details class="ch" id="s08">
+<summary><i>VIII.</i><b>Slides</b></summary>
+<ul>
+<li>Illusions are not the result of fantasy but the perception of a different reality.</li>
+<li>People present in the material world are capable of perceiving other realities.</li>
+<li>Inner convictions can distort a person’s objective perception of the world.</li>
+<li>A slide is something you carry around in your own mind that others are not.</li>
+<li>Slides distort the perception of true reality.</li>
+<li>People have a tendency to hang their projections on others around them.</li>
+<li>Importance lies at the foundation of all slides.</li>
+<li>As soon as importance disappears the slide ceases to exist.</li>
+<li>Outer intention gradually but consistently realizes the content of the slide.</li>
+<li>Stop battling with yourself and switch your attention from the negative to the positive.</li>
+<li>Create a positive slide that is pleasing both to your heart and mind.</li>
+<li>Look at your slide more often each time embellishing it with more detail.</li>
+<li>Never portray an image in your slide that is copied from another person.</li>
+<li>You will never receive anything that does not trigger your will to have .</li>
+<li>Allow yourself the luxury of deserving the absolute best.</li>
+<li>The will to have is the immutable knowledge that you deserve what you want and that it is your choice.</li>
+<li>Positive slides help you to push open the limits of your comfort zone to include things that previously seemed implausible.</li>
+<li>Do not treat the slide as if it were just a picture; live it, at least in the virtual world.</li>
+<li>Allow in any information relating to the world of your dream.</li>
+<li>It is not contemplation of the result but visualisation of the process that moves you towards your goal.</li>
+<li>Rather than contemplating the result imagine the process of birth and growth.</li>
+<li>In Transurfing, visualisation is understood to be the act of focusing on a mental image of the realization process of a current link in the transfer chain.</li>
+<li>If it is not clear to you how to achieve your goal, focus on visualising the slide instead.</li>
+<li>The slide will take you in the necessary direction.</li>
+</ul>
+</details>
+<details class="ch" id="s09">
+<summary><i>IX.</i><b>The Heart and Mind</b></summary>
+<ul>
+<li>The mind has will but is incapable of feeling outer intention.</li>
+<li>The heart can feel outer intention but is not capable of will.</li>
+<li>When heart and mind are united they harness the will of outer intention.</li>
+<li>Your heart is just as good as the heart of others. You deserve the absolute best.</li>
+<li>You have everything you need. All you have to do is use it.</li>
+<li>Stars are born independently but pendulums light them up.</li>
+<li>Pendulums hide the fact that every individual has unique abilities.</li>
+<li>The rule ‘Do as I do”, creates the pendulums’ widely accepted stereotypes.</li>
+<li>Every soul has its own individual ‘star’ sector.</li>
+<li>If the mind allows it to, the heart will find its sector.</li>
+<li>Allow yourself the boldness to sneeze at stereotypes.</li>
+<li>Allow yourself the boldness to believe in the unlimited capabilities of your soul.</li>
+<li>Allow yourself the boldness to exercise the right to your own amazing individuality.</li>
+<li>Keep the joy and give the pride to your Angel.</li>
+<li>Human thought and behaviour is conditioned by dependency on pendulums.</li>
+<li>Keep importance to a minimum and act with conscious awareness.</li>
+<li>Do not attribute anything excessively meaning.</li>
+<li>You do not need importance; pendulums do.</li>
+<li>It is not effort and steadfastness but conscious intention that keeps importance at zero.</li>
+<li>Fraile characterises the individual essence of the human soul.</li>
+<li>In chasing after other peoples’ standards the mind becomes all the more divorced from the heart.</li>
+<li>You will acquire many hidden virtues by attuning your mind to the soul’s Fraile.</li>
+<li>In a state of unity the heart sings and the mind rubs its hands in satisfaction.</li>
+<li>Focusing on the means the mind places a fatal cross on the elusive goal.</li>
+<li>Allowing yourself to have is the most important condition to fulfilling your desires.</li>
+<li>Despite all its attractiveness, if something weighs on you the goal may be false.</li>
+<li>Never believe anyone who expects you to change yourself.</li>
+<li>Inner discomfort manifests as heavy anxiety, a feeling of being burdened and oppression.</li>
+<li>A feeling of inner comfort does not signal an unequivocal ‘yes’.</li>
+<li>A feeling of inner discomfort signals an unequivocal ‘no’.</li>
+<li>When considering your goal, do not think about how prestigious or realistic it is; do not think about the means to achieving it.</li>
+<li>Give your attention to how comfortable thinking about it makes you feel.</li>
+<li>Any affirmation should be accompanied by corresponding feelings.</li>
+<li>Every affirmation should be positive and have a narrow focus.</li>
+<li>Focus the affirmation on the cause, not the effect.</li>
+<li>Formulate the affirmation in the present tense.</li>
+<li>When the will to have is free of the desire to have the pendulum has nothing to hook into.</li>
+<li>You calmly take what is yours without insistence, just like you take the post from your letter box.</li>
+</ul>
+</details>
+<details class="ch" id="s10">
+<summary><i>X.</i><b>Goals and Doors</b></summary>
+<ul>
+<li>A foreign goal is always punishing, coerced and feels like an obligation.</li>
+<li>A foreign goal appears in the guise of fashion and prestige.</li>
+<li>A foreign goal attracts you with its apparent unattainability.</li>
+<li>A foreign goal forces you to prove something to yourself and others.</li>
+<li>A foreign goal is imposed upon you by others.</li>
+<li>A foreign goal serves to improve someone else’s material wellbeing.</li>
+<li>A foreign goal makes you feel uneasy.</li>
+<li>In the process of achieving the goal you will fulfil all other desires along the way.</li>
+<li>What is your heart drawn to? What would make your life joyful and happy?</li>
+<li>Do not think about the means until you have clearly determined your goal.</li>
+<li>Having made the decision, be aware of how your inner voice responds.</li>
+<li>Slides can eliminate inner inhibitions but never inner discomfort.</li>
+<li>The heart always knows exactly what it does not want.</li>
+<li>It is not the mind’s task to do the searching when you are looking for your goal.</li>
+<li>It is the mind’s task to absorb information from the outside world at the same time as paying particular attention to the still, inner voice within.</li>
+<li>Your door is the path that will lead you to your goal.</li>
+<li>If you cannot see the path, picture the mental image of your target slide.</li>
+<li>Outer intention will open your door for you to your target life line.</li>
+<li>If you experience a feeling of inspiration on the path to your goal you know that you have chosen the door meant specifically for you.</li>
+<li>Everything you do willingly and easily has meaning and value.</li>
+<li>Do not include any scripts in the target slide. You already have what you want.</li>
+<li>Do not put your goal and door in one basket. Find a potential substitute.</li>
+<li>Do not slam any doors or burn any bridges.</li>
+<li>Do not allow yourself to be influenced by others. Trust yourself.</li>
+</ul>
+</details>
+<details class="ch" id="s11">
+<summary><i>XI.</i><b>Energy</b></summary>
+<ul>
+<li>Physiological energy is spent on the execution of physical action.</li>
+<li>Intention depends on free energy.</li>
+<li>Free energy passes through the body in two opposing currents.</li>
+<li>The energy of intention is blocked when you are stressed.</li>
+<li>To get rid of stress, wake up and drop importance.</li>
+<li>If reducing importance is not possible there is no point in wasting energy trying to relax.</li>
+<li>You can strengthen your protective shield by performing energy exercises.</li>
+<li>Do not try and accumulate energy just let it freely pass through you.</li>
+<li>High energy levels depend on wide central meridians.</li>
+<li>Performing energy exercises is an effective way of strengthening the meridians.</li>
+<li>Cleansing the body will significantly widen the meridians.</li>
+<li>Inner intention is focused on being ill and getting better.</li>
+<li>Outer intention is focused on leading a healthy lifestyle.</li>
+<li>Never accept the game of destructive illness pendulums.</li>
+<li>During the exercises pay attention to the central meridians.</li>
+<li>Intention lies in focused concentration not gusto and diligence.</li>
+</ul>
+</details>
+<details class="ch" id="s12">
+<summary><i>XII.</i><b>Frailing</b></summary>
+<ul>
+<li>Use other people’s inner intention to achieve your own goals.</li>
+<li>The feeling of self-worth lies at core of inner intention.</li>
+<li>Do not try and change others; do not try and change yourself either.</li>
+<li>To act more naturally switch your attention from self to others.</li>
+<li>Play the game of increasing other people’s sense of self-worth.</li>
+<li>If you want to attract attention, show an interest in those around you.</li>
+<li>In conversation people are not inclined to evaluate how interesting you are; they are evaluating how well you might suit the role of realising their self-worth.</li>
+<li>Express your interest in others with sincerity.</li>
+<li>Outer intention helps you to realise the inner intention of others.</li>
+<li>Let go of the intention to get and replace it with the intention to give.</li>
+<li>As a result, you will get the very thing you gave up.</li>
+<li>Argument and criticism are the mind’s battle with the alternatives flow.</li>
+<li>Avoid any action that injures another’s self-esteem.</li>
+<li>At the beginning of any conversation, take a turn with your partner so that you are moving in the same flow direction together.</li>
+<li>Do not justify your mistakes – consciously admit them.</li>
+<li>Adopt the role of defending other people when they are right.</li>
+<li>A display of genuine liking for someone brings down their protective barrier.</li>
+<li>Asking a small favour of someone is the best way of befriending them.</li>
+<li>Healthy visualisation creates a condition of comfort on an energetic level.</li>
+<li>An individual’s personal power and influence is proportional to their free energy.</li>
+<li>Charm is the result of mutual love between heart and mind.</li>
+<li>Allow yourself the luxury of having shortcomings and lacking strengths.</li>
+<li>The excess potential of inner importance is dissipated through action.</li>
+</ul>
+</details>
+<details class="ch" id="s13">
+<summary><i>XIII.</i><b>Coordination</b></summary>
+<ul>
+<li>Self-confidence is the same as a sheepish manner turned inside out.</li>
+<li>When you abandon importance the walls of the labyrinth of insecurity crumble.</li>
+<li>Where there is freedom without struggle confidence is no loner necessary.</li>
+<li>When I have no importance, I have nothing to defend and nothing to conquer.</li>
+<li>Do not fight your response to provocation; change your relationship to it.</li>
+<li>Be indifferent to losing and avoid setting yourself ultimatums.</li>
+<li>Treat all information with conscious awareness.</li>
+<li>You have freedom of choice. All you need is the will to have.</li>
+<li>Earn the will to have, not money.</li>
+<li>Concentrate on the goal as if you had already achieved it.</li>
+<li>The fact of personal choice is an immutable law. You shape your own reality.</li>
+<li>How not to be afraid? — Find a safety net, plan B or alternative route.</li>
+<li>How not to worry or get anxious? – Act.</li>
+<li>How not to desire? — Accept the possibility of defeat and act.</li>
+<li>How not to wait in expectation? — Act.</li>
+<li>How to increase your worth? — End the battle for self-worth.</li>
+<li>How not to get irritated? — Play with the pendulum and break its game rules.</li>
+<li>How to be rid of feelings of guilt? — Stop justifying yourself.</li>
+<li>How to deal with resentment? — End the battle and go with the flow.</li>
+<li>If you cannot deal with your resentment, allow yourself not to be able to deal with it.</li>
+<li>Life lines fork into positive and negative branches.</li>
+<li>You make your choice by expressing your relationship to the event that stands at the fork in the line.</li>
+<li>You step onto the positive branch of a life line when you intend to perceive apparent negative changes to the script as positive.</li>
+<li>Adopt the foolish habit of taking joy in setbacks.</li>
+<li>Switch control from battling against the alternative flow to going with it.</li>
+<li>Do not think about the means of achieving your goal; turn the target slide in your mind and place one foot in front of the other in the direction of your goal. Live your slide where the goal has already been achieved.</li>
+<li>Then outer intention will have its way and apples will fall to the sky.</li>
+</ul>
+</details>
+<details class="ch" id="s14">
+<summary><i>XIV.</i><b>Forward to the Past</b></summary>
+<ul>
+<li>Turning the key releases tension and frees the energy of intention.</li>
+<li>Transaction: turning the key, visualisation and clear focused sight.</li>
+<li>Transaction enables you to see the changing shades in the scenery.</li>
+<li>Do not give the transaction technique excess meaning.</li>
+<li>Carry out transactions in a relaxed manner.</li>
+<li>Do not push yourself to do the transaction exercise too often.</li>
+<li>The target slide and visualisation process are quite sufficient.</li>
+<li>The only purpose of transaction is to enable you to perceive movement through the alternatives space.</li>
+<li>Moving towards your goal refreshes the layer of your world.</li>
+<li>The world is a mirror that reflects your relationship to it.</li>
+<li>You win your freedom by ending the battle.</li>
+</ul>
+</details>
+<details class="ch" id="s15">
+<summary><i>XV.</i><b>Letters from the Past</b></summary>
+<ul>
+<li>If you do not control reality, reality will control you.</li>
+</ul>
+</details>
+<details class="ch" id="s16">
+<summary><i>XVI.</i><b>Dances with Shadows</b></summary>
+<ul>
+<li>The life goal and purpose of all living beings is to shape reality.</li>
+<li>Boredom as such does not exist. Boredom is simply a constant and insatiable thirst to shape reality.</li>
+<li>Appraisals based on comparison generate polarisation.</li>
+<li>Balanced forces eliminate polarisation by means of clashing opposites.</li>
+<li>An object or quality which is attributed special significance attracts objects with the opposite qualities.</li>
+<li>The pendulum rule is “Do as I do!”</li>
+<li>The Transurfing rule is: give yourself permission to be yourself and allow others to do the same.</li>
+<li>The Transurfing rule eliminates polarisation.</li>
+<li>Awareness: in this moment I am awake and am clearly aware of what I am doing, why and why in this manner specifically.</li>
+<li>The first law of the pendulum: it tries to exacerbate the energy of conflict.</li>
+<li>The second law of the pendulum: it does everything possible to stabilise the structure.</li>
+<li>Pendulums coordinate the existence of organised structures.</li>
+<li>The enslavement of will (intention): the structure teaches people what they should want.</li>
+<li>In order to free yourself of the zombifying effect of the structure you must adopt the role of the participating spectator.</li>
+<li>The process of achieving the goal is what drives evolution.</li>
+<li>The individual loses themselves in the structure ceasing to understand who they are and what they really want.</li>
+<li>Dependence arises due to the fact that the arrow of attention falls into the pendulum’s noose.</li>
+<li>To “come off the needle” you have to switch your attention and occupy it your mind with something else, changing the scripts and scenery.</li>
+<li>The charisma of a particular epoch is drawn in by the intention of a group of people, like a cloud from the alternatives space.</li>
+<li>Whenever you receive any energy credit announce your declaration of intention.</li>
+<li>It is impossible to beat a pendulum. You have to either abandon the dangerous game altogether or create your own venture and become one of its favourites.</li>
+<li>In order to create your own game you have to give yourself permission to be yourself.</li>
+</ul>
+</details>
+<details class="ch" id="s17">
+<summary><i>XVII.</i><b>The Dreams of the Gods</b></summary>
+<ul>
+<li>The world is like a dual mirror. Material reality is on one side and the metaphysical alternatives space is on the other.</li>
+<li>The individual perceives reality in the way they have been taught to.</li>
+<li>Life is like a waking non-lucid dream in which the individual has no reference point for reality.</li>
+<li>Come down into the auditorium and observe. Act dispassionately, rent yourself out and remain the observer.</li>
+<li>Reducing importance levels, going with the alternatives flow and coordination will enable you to navigate the waking dream with your eyes closed.</li>
+<li>The life of every living being is one of God’s dreams.</li>
+<li>The purpose of life and likewise service to God lies in co-creation together with Him.</li>
+<li>The process of striving towards a goal is the driver for evolution.</li>
+<li>Species variation in the process of evolution is conditioned by intention.</li>
+<li>God creates reality and controls it through the intention of everything in existence.</li>
+<li>The gift of God to every living being is freedom and the power to shape reality according to consciousness.</li>
+<li>If you express an intention, consider it the intention of God. How then could you doubt that it could be fulfilled?</li>
+<li>Do not ask, do not demand, do not struggle, just create.</li>
+</ul>
+</details>
+<details class="ch" id="s18">
+<summary><i>XVIII.</i><b>The Mirror World</b></summary>
+<ul>
+<li>The mirror principles :</li>
+<li>The world like a mirror reflects your relationship to it.</li>
+<li>The reflection is formed in the unity of heart and mind.</li>
+<li>There is a delay in the reaction of the dual mirror.</li>
+<li>The mirror states the content of the relationship and ignores the nature of the relationship.</li>
+<li>Do not think about what you do not want; think about what you are striving to attain.</li>
+<li>Release your grip and allow the world to move with the alternatives flow.</li>
+<li>Any reflection should be perceived as positive.</li>
+<li>You control reality by controlling your chain of thought.</li>
+<li>Cite the amalgam formula at every convenient opportunity.</li>
+<li>You have to move the image, not the reflection, i.e. change your mental outlook and the nature of your thoughts.</li>
+<li>Your attention should be focused on the end goal as if it were already achieved.</li>
+<li>To materialise a slide you must turn it methodically in your mind’s eye for a sufficient period of time.</li>
+<li>Do not suppress your emotions – change your relationship to the problem.</li>
+</ul>
+</details>
+<details class="ch" id="s19">
+<summary><i>XIX.</i><b>The Gatekeeper to Eternity</b></summary>
+<ul>
+<li>Accumulation of toxins in the body, excess potential and unrealised intention reduces your energy levels.</li>
+<li>In order to free up energy reserves you have to either let go of some of your potential intentions or stream them into reality.</li>
+<li>In order for the energy to work you have to concentrate on the end goal.</li>
+<li>Concentration is not tension, it is focus.</li>
+<li>Teach yourself to think about what you are actually doing in the moment.</li>
+<li>Systematically focusing your attention on the target slide is essential.</li>
+<li>Stop justifying yourself.</li>
+<li>Stop trying to prove how important you are.</li>
+<li>Maintain the amalgam and follow the mirror principles.</li>
+<li>To reduce the effect of polarisation you have to release the over-tightened spokes.</li>
+<li>Techniques for shaping your own reality include: the target slide, visualising the process, energy channels, the frame, the explosion wave, outer sphere, scenery reduction, target amalgam, focusing intention and integration.</li>
+<li>The preferred approach for you personally should be the one you find works the best.</li>
+<li>Do everything in the way that feels most comfortable.</li>
+<li>Regular practice is the most important condition for success.</li>
+<li>You have to escape from the mirror.</li>
+<li>Once you have a foundation of knowledge you can change the focus of your intention from “receive” to “create”.</li>
+<li>You do not have to come up with ideas; just recognise them when they hit you.</li>
+<li>Departing from your starting point go with the alternatives flow.</li>
+<li>Claim your right to be right.</li>
+<li>Leave the crowd and deliver your verdict; assert the right of the Maker.</li>
+<li>I have taken this decision because I am the Maker of my own reality.</li>
+</ul>
+</details>
 <footer>
-<p>Concepts from <em>Reality Transurfing, Steps I&ndash;V</em> by Vadim Zeland. Summaries and illustrations by Tigran Sargsyan. Images generated with Nano Banana Pro.</p>
+<p>From <em>Reality Transurfing, Steps I&ndash;V</em> by Vadim Zeland. The mirror rules in Part Two and the chapter summaries in Part Three are quoted from the book and belong to the author. The commentary and the illustrations are by Tigran Sargsyan. Images generated with Nano Banana Pro.</p>
 <p>Zeland's system is metaphysical rather than scientific and makes no falsifiable claims. Read it as a set of psychological heuristics wrapped in a cosmology.</p>
 </footer>
 </div>
